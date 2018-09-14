@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Monte faro</title>
+
+	<link rel="stylesheet" href="../www/js/node_modules/materialize-css/dist/css/materialize.min.css">
+	<link rel="stylesheet" href="../www/css/styles.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+<body>
+
+	<!--HEADER-->
+	<nav class="blue darken-3">
+		<div class="nav-wrapper">
+
+			<a href="#" id="menu_opener" data-target="slide-out" class="sidenav-trigger">
+				<i class="material-icons">menu</i>
+			</a>
+
+			<div class="show-on-small">
+				<a href="#!" class="brand-logo">montefaro</a>
+			</div>
+			<ul id="nav-mobile" class="left	hide-on-med-and-down">
+				<li id="logo"><a href="../index.html"><img id="logo" src="../www/files/logo4.png" /></a></li>
+				<li><a href="products.html">Productos</a></li>
+				<li><a href="about.html">Sobre nosotros</a></li>
+				<li><a href="contact.html">Contacto</a></li>
+			</ul>
+		</div>
+	</nav>
+	 
+	 <!--BODY-->
+	 <div class="container">
+
+		<h4>Argopecten purpuratus <span class="small">(Ostión Chileno • Scallops • Noix Saint Jacques • Vieira del Pacífico • Zamburiña)</span></h4>
+		<p>
+			Nuestro Producto es de Acuicultura en Areas controladas que son supervisadas y monitoreadas periódicamente por las  Autoridades Sanitarias.
+			Nuestros Ostiones se cultivan de forma natural en aguas del Océano Pacífico y en ningún caso se tratan con antibióticos, cumpliendo así con las Regulaciones de la UE y FDA en lo que respecta a toxinas marinas y residuos químicos, consiguiendo así la máxima calidad.
+			El procesado se realiza en Planta Autorizada para la exportación a la UE, ya que cumple con un exigente PAC de calidad.
+			<br><br>
+			<span class="sentence">
+					Ofrecemos nuestro Producto en media concha o carne IQF.
+			</span>
+
+			Caracteristicas
+			<ul>
+				<li> • Congelados en forma rápida e individual (IQF) Listos para cocinar, rápidos de servir</li>
+				<li> • Empacados para retail & foodservice</li>
+			</ul>
+			Contenido /Empaque
+			<ul>
+				<li> • Empaque primario: Bolsa PE transparente (1 kg)</li>
+				<li> • Empaque secundario: Cajas de cartón (8 kg)</li>
+				<li> • Etiquetado: Cavalier en bolsa; adhesivo en caja</li>
+			</ul>
+			
+		</p>
+			
+		<div class="row">
+
+			<div class="col m5 offset-m1">
+
+				<div class="card">
+					<div class="card-image waves-effect waves-block waves-light">
+						<img class="activator" src="../www/files/productos/media concha.PNG">
+						<span class="card-title activator">Media Concha IQF</span>
+					</div>
+					<div class="card-content">
+						<p>	
+							Ostiones con coral. Cultivados, procesados y congelados en forma IQF, su pegado es natural.
+							<br>
+							Calibres: 10/20 – 20/30 – 30/40
+						</p>
+					</div>
+					<div class="card-action">
+						<a class="activator green white-text btn-flat">Más info</a>
+					</div>
+					<div class="card-reveal">
+						<span class="card-title grey-text text-darken-4">Media Concha IQF<i class="material-icons right">close</i></span>
+						<p>
+							Ostiones con coral. Cultivados, procesados y congelados en forma IQF, su pegado es natural.
+							<br>
+							Calibres: 10/20 – 20/30 – 30/40
+							bla bla bla bla bla bla
+						</p>
+					</div>
+				</div>
+			</div>
+		
+			<div class="col m5">
+
+				<div class="card">
+					<div class="card-image waves-effect waves-block waves-light">
+						<img class="activator" src="../www/files/productos/carne.png">
+						<span class="card-title activator">Carne IQF</span>
+					</div>
+					<div class="card-content">
+						<p>	
+							Ostiones con coral. Cultivados, procesados y congelados en forma IQF. 
+							<br><br>
+							Calibres: 30/40 – 20/30
+						</p>
+					</div>
+					<div class="card-action">
+						<a class="activator green white-text btn-flat">Más info</a>
+					</div>
+					<div class="card-reveal">
+						<span class="card-title grey-text text-darken-4">Carne IQF<i class="material-icons right">close</i></span>
+						<p>
+							Ostiones con coral. Cultivados, procesados y congelados en forma IQF. 
+							<br><br>
+							Calibres: 30/40 – 20/30
+						</p>
+					</div>
+				</div>
+
+			</div>
+			
+		</div>
+	 </div>
+
+	
+	<!--FOOTER-->
+	<footer class="blue darken-3 white-text">
+		<div class="container">
+
+			<span class="right">
+				+56 (2) 23 346 219 
+			</span>
+			<span class="separator right"> |</span>
+			<span class="right">
+				(+34) 607 920 950 
+			</span>
+			
+			<span>
+				&copy; montefaro <span id="year"></span>
+			</span>
+			<br>
+			<span>c/ San Sebastián, 2812 - Ofic. 809 | Comuna Las Condes | Santiago - Chile </span>
+
+			<span class="right">
+				direccion@montefaro.info
+			</span>
+			
+			<br>
+		</div>
+	</footer>
+
+	<script src="../www/js/node_modules/materialize-css//dist/js/materialize.min.js"></script>
+
+	<script>
+		
+		let d = document;
+		d.$ = document.querySelectorAll;
+
+		let year_element = d.$("#year")[0];
+		let actual_year = new Date();
+		actual_year = actual_year.getFullYear();
+
+		year_element.innerText = actual_year;
+	
+	</script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Monte faro</title>
+
+	<link rel="stylesheet" href="../www/js/node_modules/materialize-css/dist/css/materialize.min.css">
+	<link rel="stylesheet" href="../www/css/styles.css">
+
+</head>
+<body>
+
+	<!--HEADER-->
+	<nav class="blue darken-3">
+		<div class="nav-wrapper">
+
+			<a href="#" id="menu_opener" data-target="slide-out" class="sidenav-trigger">
+				<i class="material-icons">menu</i>
+			</a>
+
+			<div class="show-on-small">
+				<a href="#!" class="brand-logo">montefaro</a>
+			</div>
+			<ul id="nav-mobile" class="left	hide-on-med-and-down">
+				<li id="logo"><a href="../index.html"><img id="logo" src="../www/files/logo4.png" /></a></li>
+				<li><a href="products.html">Productos</a></li>
+				<li><a href="about.html">Sobre nosotros</a></li>
+				<li><a href="contact.html">Contacto</a></li>
+			</ul>
+		</div>
+	</nav>
+	 
+	 <!--BODY-->
+	 <div class="container">
+		<h4>MONTEFARO SpA</h4>
+		<div class="company_address">
+			<span>Cultivo, Elaboración, Comercialización y Exportación del Ostión Chileno</span>
+			<br>
+			<span>c/ San Sebastián, 2812 - Ofic. 809 | Comuna Las Condes | Santiago - Chile</span>
+			<br>
+			<span>+56 (2) 23 346 219 |(+34) 607 920 950</span>
+		</div>
+		<br>
+	 </div>
+
+	<!--FOOTER-->
+	
+	<!--FOOTER-->
+	<footer class="blue darken-3 white-text">
+		<div class="container">
+
+			<span class="right">
+				+56 (2) 23 346 219 
+			</span>
+			<span class="separator right"> |</span>
+			<span class="right">
+				(+34) 607 920 950 
+			</span>
+			
+			<span>
+				&copy; montefaro <span id="year"></span>
+			</span>
+			<br>
+			<span>c/ San Sebastián, 2812 - Ofic. 809 | Comuna Las Condes | Santiago - Chile </span>
+
+			<span class="right">
+				direccion@montefaro.info
+			</span>
+			
+			<br>
+		</div>
+	</footer>
+
+	<script src="../www/js/node_modules/materialize-css//dist/js/materialize.min.js"></script>
+
+	<script>
+		
+		let d = document;
+		d.$ = document.querySelectorAll;
+
+		let year_element = d.$("#year")[0];
+		let actual_year = new Date();
+		actual_year = actual_year.getFullYear();
+
+		year_element.innerText = actual_year;
+	
+	</script>
+</body>
+</html>
