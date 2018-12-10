@@ -8,6 +8,7 @@
 	<meta name="robots" content="noindex" />
 
 	<link rel="stylesheet" href="../www/js/node_modules/materialize-css/dist/css/materialize.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" href="../www/css/styles.css">
 
 </head>
@@ -22,7 +23,7 @@
 			</a>
 
 			<div class="show-on-small">
-				<a href="#!" class="brand-logo">montefaro</a>
+				<a href="../index.html" class="brand-logo"><img id="logo" src="../www/files/logo4.png" /></a>
 			</div>
 			<ul id="nav-mobile" class="left	hide-on-med-and-down">
 				<li id="logo"><a href="../index.html"><img id="logo" src="../www/files/logo4.png" /></a></li>
@@ -30,8 +31,17 @@
 				<li><a href="about.html">Sobre nosotros</a></li>
 				<li><a href="contact.html">Contacto</a></li>
 			</ul>
+
 		</div>
 	</nav>
+
+	<ul id="slide-out" class="sidenav blue darken-4">
+		<br>
+		<li><a class="waves-effect white-text" href="../index.html">Inicio</a></li>
+		<li><a class="waves-effect white-text" href="products.html">Productos</a></li>
+		<li><a class="waves-effect white-text" href="about.html">Sobre</a></li>
+		<li><a class="waves-effect white-text" href="contact.html">Contacto</a></li>
+	</ul>
 	 
 	 <!--BODY-->
 	 <div class="container">
@@ -97,6 +107,13 @@
 		//Media
 		var elems = document.querySelectorAll(".materialboxed");
 	    var instances = M.Materialbox.init(elems, {});
+
+		//Hamburger
+		M.AutoInit();
+		document.addEventListener("DOMContentLoaded", function() {
+			var elems = document.querySelectorAll(".sidenav");
+			var instances = M.Sidenav.init(elems, {"edge":"left"});
+		});
 	
 	</script>
 </body>
