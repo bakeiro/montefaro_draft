@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+	<!-- Meta -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+	<!-- Others -->
+	<title>Monte faro, una Empresa establecida en Chile</title>
+	<meta name="description" content="Empresa chilena, dedicada a la producción, procesamiento e importación de ostiones chilenos">
+	<link rel="canonical" href="http://montefaro.info/pages/contact.html" />
+
+	<!-- Cache speed headers -->
+	<meta http-equiv="cache-control" content="Private" />
+	<meta http-equiv="Expires" content="600" />
+
+	<!-- Resources -->
+	<link rel="stylesheet" href="../www/js/node_modules/materialize-css/dist/css/materialize.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="../www/css/styles.css">
+
+</head>
+<body>
+
+	<!--HEADER-->
+	<nav class="blue darken-3">
+		<div class="nav-wrapper">
+
+			<a href="#" id="menu_opener" data-target="slide-out" class="sidenav-trigger">
+				<i class="material-icons">menu</i>
+			</a>
+
+			<div class="show-on-small">
+				<a href="../index.html" class="brand-logo"><img alt="logo empresa" id="logo" src="../www/files/logo4.png" /></a>
+			</div>
+			<ul id="nav-mobile" class="left	hide-on-med-and-down">
+				<li id="logo"><a href="../index.html"><img alt="logo empresa" id="logo" src="../www/files/logo4.png" /></a></li>
+				<li><a href="products.html">Productos</a></li>
+				<li><a href="about.html">Sobre nosotros</a></li>
+				<li><a href="contact.html">Contacto</a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<ul id="slide-out" class="sidenav blue darken-4">
+		<br>
+		<li><a class="waves-effect white-text" href="../index.html">Inicio</a></li>
+		<li><a class="waves-effect white-text" href="products.html">Productos</a></li>
+		<li><a class="waves-effect white-text" href="about.html">Sobre</a></li>
+		<li><a class="waves-effect white-text" href="contact.html">Contacto</a></li>
+	</ul>
+	 
+	 <!--BODY-->
+	 <div class="container">
+
+		<h1>MONTEFARO SpA</h1>
+		<div class="company_address">
+			<span>Cultivo, Elaboración, Comercialización y Exportación del Ostión Chileno</span>
+			<br>
+			<span>c/ Brasil n 213, La Serena - Chile</span>
+			<br>
+			<span>+56 (2) 23 346 219 |(+34) 607 920 950</span>
+		</div>
+		<br>
+	 </div>
+
+	<!--FOOTER-->
+	
+	<!--FOOTER-->
+	<footer class="blue darken-3 white-text">
+		<div class="container">
+
+			<span class="right">
+				+56 (2) 23 346 219 
+			</span>
+			<span class="separator right"> |</span>
+			<span class="right">
+				(+34) 607 920 950 
+			</span>
+			
+			<span>
+				&copy; montefaro <span id="year"></span>
+			</span>
+			<br>
+			<span>c/ Brasil n 213, La Serena - Chile </span>
+
+			<span class="right">
+				direccion@montefaro.info
+			</span>
+			
+			<br>
+		</div>
+	</footer>
+
+	<script src="../www/js/node_modules/materialize-css//dist/js/materialize.min.js"></script>
+
+	<script>
+		
+		let d = document;
+		d.$ = document.querySelectorAll;
+
+		//Year
+		let year_element = d.$("#year")[0];
+		let actual_year = new Date();
+		actual_year = actual_year.getFullYear();
+
+		year_element.innerText = actual_year;
+
+		//Hamburger
+		M.AutoInit();
+		document.addEventListener("DOMContentLoaded", function() {
+			var elems = document.querySelectorAll(".sidenav");
+			var instances = M.Sidenav.init(elems, {"edge":"left"});
+		});
+	
+	</script>
+</body>
+</html>
